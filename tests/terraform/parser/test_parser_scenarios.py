@@ -58,6 +58,9 @@ class TestParserScenarios(unittest.TestCase):
     def test_tomap_function(self):
         self.go("tomap_function")
 
+    def test_map_function(self):
+        self.go("map_function")
+
     def test_tonumber_function(self):
         self.go("tonumber_function")
 
@@ -88,6 +91,9 @@ class TestParserScenarios(unittest.TestCase):
 
     def test_module_reference(self):
         self.go("module_reference")
+
+    def test_module_output_reference(self):
+        self.go("module_output_reference")
 
     def test_bad_ref_fallbacks(self):
         self.go("bad_ref_fallbacks")
